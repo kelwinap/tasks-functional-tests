@@ -8,7 +8,7 @@ describe("Health check", () => {
   });
 
   it("should see title", () => {
-    cy.visit("http://192.168.0.2:9999/tasks/tasks/");
+    cy.visit("http://192.168.0.2:9999/tasks");
     cy.get("h1").should("contain", "Tasks");
   });
 });
